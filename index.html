@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyFlow</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-<h1>StudyFlow</h1>
-<nav>
-    <a href="index.html"> Início</a>
-    <a href="login.html"> Entrar</a>
-    <a href="cadastro.html"> Criar Conta</a>
-</nav>
-    </header>
 
-    <main>
+<header>
 
-    <section class="inicio">
+    <div class="logo">
+        🎓 <span>StudyFlow</span>
+    </div>
 
-        <div class="texto">
+    <nav>
 
-            <h2>Organize seus estudos.</h2>
+        <a href="#">Início</a>
+        <a href="#">Recursos</a>
+        <a href="#">Sobre</a>
+        <a href="login.html">Entrar</a>
+        <a class="btn-menu" href="cadastro.html">Criar Conta</a>
 
-            <p>
-                Nunca mais esqueça provas, trabalhos e atividades.
-                Tenha tudo organizado em um único lugar.
-            </p>
+    </nav>
 
-            <a href="login.html">
-                <button>Entrar</button>
-            </a>
+</header>
+
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>Organize seus estudos de forma inteligente.</h1>
+
+        <p>
+            Nunca mais esqueça provas, trabalhos e atividades.
+            Planeje seu semestre, acompanhe seu progresso e
+            mantenha tudo organizado em um único lugar.
+        </p>
+
+        <div class="botoes">
 
             <a href="cadastro.html">
-                <button class="cadastro">Criar Conta</button>
+                <button>Criar Conta</button>
+            </a>
+
+            <a href="login.html">
+                <button class="secundario">Entrar</button>
             </a>
 
         </div>
 
-    </section>
+    </div>
 
-</main>
+    <div class="hero-imagem">
 
-<footer>
-    <p>© 2026 StudyFlow</p>
-</footer>
+        <img src="https://undraw.co/api/illustrations/education.svg" alt="Estudando">
 
+    </div>
+
+</section>
 <script src="script.js"></script>
 
 </body>
-</html>
-
+ </html>
