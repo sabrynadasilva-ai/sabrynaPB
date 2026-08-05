@@ -348,3 +348,71 @@ nav{
     text-decoration:none;
     font-weight:600;
 }
+
+/* DASHBOARD */
+
+.dashboard{
+
+margin-top:130px;
+
+padding:60px 8%;
+
+}
+
+.dashboard h1{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.dashboard>p{
+
+margin-bottom:40px;
+
+color:#666;
+
+}
+
+.dashboard .cards{
+
+display:flex;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.dashboard .card{
+
+flex:1;
+
+min-width:260px;
+
+background:#fff;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.dashboard .card h3{
+
+margin-bottom:20px;
+
+color:#22c55e;
+
+}
+
+.dashboard .card p{
+
+margin-bottom:12px;
+
+line-height:1.6;
+
+}
