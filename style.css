@@ -416,3 +416,48 @@ margin-bottom:12px;
 line-height:1.6;
 
 }
+
+/* CALENDÁRIO */
+
+.calendario{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.cal-box{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    width:320px;
+    text-align:center;
+}
+
+.cal-box h2{
+    margin-bottom:10px;
+    color:#1d2433;
+}
+
+.cal-box h3{
+    color:#22c55e;
+    margin-bottom:20px;
+}
+
+.cal-box table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.cal-box th,
+.cal-box td{
+    padding:10px;
+    font-size:17px;
+}
+
+.hoje{
+    background:#22c55e;
+    color:#fff;
+    border-radius:50%;
+    font-weight:bold;
+}
