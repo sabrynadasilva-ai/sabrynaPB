@@ -138,6 +138,7 @@ nav a:hover{
 
 .btn-verde:hover{
     transform:translateY(-3px);
+    background: #16a34a;
 }
 
 .btn-branco{
@@ -153,6 +154,7 @@ nav a:hover{
 
 .btn-branco:hover{
     border-color:#22c55e;
+    color: #22c55e;
 }
 
 /* ===========================
@@ -241,4 +243,52 @@ footer{
     text-align:center;
     padding:25px;
     font-size:16px;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 900px){
+
+header{
+    padding:15px 5%;
+}
+
+nav{
+    gap:20px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 5%;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero-imagem img{
+    max-width:400px;
+}
+
+.botoes{
+    justify-content:center;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:100%;
+    max-width:350px;
+}
+
 }
