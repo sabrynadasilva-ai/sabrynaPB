@@ -86,6 +86,19 @@ nav a:hover{
     flex:1;
 }
 
+.hero-imagem{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-imagem img{
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba (0,0,0,.15);
+}
+
 .tag{
     color:#22c55e;
     font-weight:600;
