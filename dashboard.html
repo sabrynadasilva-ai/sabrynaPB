@@ -4,129 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dashboard - StudyFlow</title>
+<title>Dashboard | StudyFlow</title>
 
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
+<header class="topo">
 
 <div class="logo">
 🎓 <span>StudyFlow</span>
 </div>
 
 <nav>
-
-<a href="index.html">Início</a>
-
+ 
 <a href="dashboard.html">Dashboard</a>
 
 <a href="perfil.html">Perfil</a>
+
+<a href="#">Configurações</a>
 
 <a href="index.html">Sair</a>
 
 </nav>
 
+<div class="usuario">
+
+<i class="fa-regular fa-bell"></i>
+
+<img src="https://i.pravatar.cc/45" alt="Usuário">
+
+</div>
+
 </header>
 
-<section class="dashboard">
+<main class="dashboard">
 
-<h1>Olá, Estudante! 👋</h1>
+<div class="boas-vindas">
 
-<p>Bem-vindo ao seu painel de estudos.</p>
+<h1>Olá, Sabryna 👋</h1>
 
-<div class="cards">
+<p>Vamos organizar seus estudos de hoje.</p>
 
-<div class="card">
-<h3>📚 Matérias</h3>
-<p>Banco de Dados II</p>
-<p>Programação Back-End I</p>
-<p>Inovação Tecnológica</p>
+ 
 </div>
 
-<div class="card">
-<h3>📅 Próximas tarefas</h3>
-<p>✔ Trabalho de Banco de Dados</p>
-<p>✔ Apresentação do StudyFlow</p>
-<p>✔ Revisar Back-End</p>
+<div class="cards-dashboard">
+
+<div class="card-dashboard">
+
+<i class="fa-solid fa-book"></i>
+
+<h3>Matérias</h3>
+
+<h2>3</h2>
+
+<p>Banco de Dados<br>Back-End<br>Empreendedorismo</p>
+
 </div>
 
-<div class="card">
-<h3>📈 Progresso</h3>
+<div class="card-dashboard">
 
-<p>80% das tarefas concluídas.</p>
+<i class="fa-solid fa-list-check"></i>
 
-<section class="calendario">
+<h3>Tarefas</h3>
 
-    <div class="cal-box">
+<h2>5</h2>
 
-        <h2>📅 Calendário</h2>
+<p>Você possui 5 atividades pendentes.</p>
 
-        <h3>Agosto 2026</h3>
+</div>
 
-        <table>
+<div class="card-dashboard">
 
-            <tr>
-                <th>D</th>
-                <th>S</th>
-                <th>T</th>
-                <th>Q</th>
-                <th>Q</th>
-                <th>S</th>
-                <th>S</th>
-            </tr>
+<i class="fa-solid fa-chart-line"></i>
 
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
+<h3>Progresso</h3>
 
-            <tr>
-                <td>3</td>
-                <td class="hoje">4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-            </tr>
-
-            <tr>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-            </tr>
-
-        </table>
-
-    </div>
-
-</section>
+<h2>80%</h2>
 
 <div class="barra">
+
 <div class="progresso"></div>
-</div>
 
 </div>
 
 </div>
 
-</section>
+</div>
+
+</main>
 
 </body>
 </html>
