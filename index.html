@@ -1,124 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyFlow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Criar Conta | StudyFlow</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
-<body>
+<body class="login-page">
 
-<header>
+<div class="login-container">
 
-<div class="logo">
-🎓 <span>StudyFlow</span>
-</div>
+<div class="login-left">
 
-<nav>
-<a href="#inicio">Início</a>
-<a href="#recursos">Recursos</a>
-<a href="#sobre">Sobre</a>
-<a href="login.html">Entrar</a>
-<a href="cadastro.html" class="btn-menu">Criar Conta</a>
-</nav>
-
-</header>
-
-<section class="hero" id="inicio">
-
-<div class="hero-texto">
-
-<div class="tag">
-📚 Organize sua rotina
-</div>
-
-<h1>
-Organize seus estudos<br>
-de forma inteligente.
-</h1>
+<h1>Crie sua conta</h1>
 
 <p>
-Nunca mais esqueça provas, trabalhos ou avaliações.
-Planeje seu semestre, acompanhe seu progresso
-e mantenha tudo organizado em um único lugar.
+Organize suas tarefas, trabalhos,
+provas e atividades em um único lugar.
 </p>
 
-<div class="botoes">
+</div>
 
-<a href="cadastro.html">
-<button class="btn-verde">
+<div class="login-right">
+
+<h2>Criar Conta</h2>
+
+<form>
+
+<input type="text" placeholder="Nome completo" required>
+
+<input type="email" placeholder="E-mail" required>
+
+<input type="password" placeholder="Senha" required>
+
+<input type="password" placeholder="Confirmar senha" required>
+
+<button class="btn-login">
 Criar Conta
 </button>
-</a>
+
+</form>
+
+<div class="linha">
+<span>ou</span>
+</div>
+
+<p class="criar">
+
+Já possui uma conta?
 
 <a href="login.html">
-<button class="btn-branco">
+
 Entrar
-</button>
+
 </a>
 
-</div>
-
-</div>
-
-<div class="hero-imagem">
-  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="Notebook">
-</div>
-
-</section>
-
-<section class="recursos" id="recursos">
-
-<h2>Recursos</h2>
-
-<div class="cards">
-
-<div class="card">
-<div class="icone">📅</div>
-<h3>Agenda</h3>
-<p>Organize provas, trabalhos e atividades.</p>
-</div>
-
-<div class="card">
-<div class="icone">📚</div>
-<h3>Matérias</h3>
-<p>Separe suas tarefas por disciplina.</p>
-</div>
-
-<div class="card">
-<div class="icone">📈</div>
-<h3>Progresso</h3>
-<p>Acompanhe tudo o que já foi concluído.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="sobre" id="sobre">
-
-<h2>Sobre o StudyFlow</h2>
-
-<p>
-O StudyFlow foi desenvolvido como projeto integrando as disciplinas de
-Banco de Dados II, Programação Back-End I e Inovação Tecnológica e
-Empreendedorismo.
-
-Nosso objetivo é ajudar estudantes a manter uma rotina de estudos organizada,
-facilitando o planejamento de tarefas e avaliações em uma única plataforma.
 </p>
 
-</section>
+</div>
 
-<footer>
- <p>© 2026 StudyFlow • Projeto Escolar</p>
-</footer>
-
+</div>
+ 
 </body>
 </html>
