@@ -3,29 +3,30 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Perfil | StudyFlow</title>
+<title>Perfil | StudyFlow</title>
 
-    <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
-<body class="perfil-page">
+
+<body>
 
 
 <!-- ================= HEADER ================= -->
 
-<header class="topo">
+<header>
 
     <div class="logo">
 
@@ -62,10 +63,12 @@
 
 <!-- ================= PERFIL ================= -->
 
-<main class="perfil-container">
+<main class="perfil">
 
 
-    <div class="perfil-cabecalho">
+    <!-- CABEÇALHO DO PERFIL -->
+
+    <section class="perfil-cabecalho">
 
         <div class="foto-perfil">
 
@@ -74,7 +77,9 @@
             </div>
 
             <button class="editar-foto">
+
                 <i class="fa-solid fa-camera"></i>
+
             </button>
 
         </div>
@@ -85,13 +90,16 @@
             <h1>Sabrina</h1>
 
             <p>
+
                 <i class="fa-solid fa-graduation-cap"></i>
+
                 Estudante
+
             </p>
 
         </div>
 
-    </div>
+    </section>
 
 
 
@@ -101,9 +109,12 @@
 
         <div class="card-titulo">
 
-            <div>
+            <div class="card-icone">
+
                 <i class="fa-solid fa-user"></i>
+
             </div>
+
 
             <div>
 
@@ -116,6 +127,7 @@
             </div>
 
         </div>
+
 
 
         <div class="informacoes-grid">
@@ -176,6 +188,7 @@
         </div>
 
 
+
         <button class="btn-editar">
 
             <i class="fa-solid fa-pen"></i>
@@ -194,9 +207,12 @@
 
         <div class="card-titulo">
 
-            <div>
+            <div class="card-icone">
+
                 <i class="fa-solid fa-bullseye"></i>
+
             </div>
+
 
             <div>
 
@@ -211,13 +227,21 @@
         </div>
 
 
+
         <div class="objetivo">
 
-            <i class="fa-solid fa-book-open"></i>
+            <div class="objetivo-icone">
+
+                <i class="fa-solid fa-book-open"></i>
+
+            </div>
+
 
             <p>
+
                 Organizar meus estudos e acompanhar
                 minhas tarefas com mais facilidade.
+
             </p>
 
         </div>
@@ -232,9 +256,12 @@
 
         <div class="card-titulo">
 
-            <div>
+            <div class="card-icone">
+
                 <i class="fa-solid fa-chart-simple"></i>
+
             </div>
+
 
             <div>
 
@@ -249,6 +276,7 @@
         </div>
 
 
+
         <div class="estatisticas">
 
 
@@ -256,7 +284,9 @@
 
                 <i class="fa-solid fa-list-check"></i>
 
-                <strong>8</strong>
+                <strong>
+                    8
+                </strong>
 
                 <span>
                     Tarefas
@@ -265,11 +295,14 @@
             </div>
 
 
+
             <div class="estatistica">
 
                 <i class="fa-solid fa-circle-check"></i>
 
-                <strong>2</strong>
+                <strong>
+                    2
+                </strong>
 
                 <span>
                     Concluídas
@@ -278,11 +311,14 @@
             </div>
 
 
+
             <div class="estatistica">
 
                 <i class="fa-solid fa-book"></i>
 
-                <strong>3</strong>
+                <strong>
+                    3
+                </strong>
 
                 <span>
                     Matérias
@@ -291,11 +327,14 @@
             </div>
 
 
+
             <div class="estatistica">
 
                 <i class="fa-solid fa-chart-line"></i>
 
-                <strong>80%</strong>
+                <strong>
+                    80%
+                </strong>
 
                 <span>
                     Progresso
@@ -309,11 +348,32 @@
     </section>
 
 
+
+    <!-- ================= VOLTAR ================= -->
+
+    <a href="dashboard.html" class="voltar-dashboard">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Voltar ao Dashboard
+
+    </a>
+
+
 </main>
 
 
 
-<script src="script.js"></script>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 StudyFlow — Organize seus estudos, alcance seus objetivos.
+    </p>
+
+</footer>
+
 
 </body>
 
