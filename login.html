@@ -23,99 +23,203 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <div class="login-container">
 
-    <!-- PAINEL VERDE -->
+   <!-- PAINEL VERDE -->
 
-    <div class="login-left">
+<div class="login-left">
 
-        <div class="logo-login">
-            🎓 <span>StudyFlow</span>
+    <div class="logo-login">
+        🎓 <span>StudyFlow</span>
+    </div>
+
+    <h1>Bem-vindo<br>de volta! 👋</h1>
+
+    <p>
+        Faça login para acessar sua conta
+        e continuar organizando seus estudos.
+    </p>
+
+    <div class="login-ilustracao">
+        📚
+    </div>
+
+</div>
+
+
+<!-- FORMULÁRIO -->
+
+<div class="login-right">
+
+    <h2>Entrar</h2>
+
+    <p class="login-subtitulo">
+        Acesse sua conta para continuar.
+    </p>
+
+
+    <form action="dashboard.html" method="get">
+
+
+        <label for="email">
+            E-mail
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+        >
+
+
+        <label for="senha">
+            Senha
+        </label>
+
+
+        <div class="senha-box">
+
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+            >
+
+            <button
+                type="button"
+                class="mostrar-senha"
+                onclick="mostrarSenha()"
+                aria-label="Mostrar senha"
+            >
+
+                <i class="fa-solid fa-eye"></i>
+
+            </button>
+
         </div>
 
-        <h1>Bem-vindo<br>de volta! 👋</h1>
 
-        <p>
-            Faça login para acessar sua conta
-            e continuar organizando seus estudos.
-        </p>
+        <div class="opcoes-login">
 
-        <div class="login-ilustracao">
-            📚
+            <label class="lembrar">
+
+                <input
+                    type="checkbox"
+                    name="lembrar"
+                >
+
+                <span>
+                    Lembrar de mim
+                </span>
+
+            </label>
+
+
+            <a
+                href="#"
+                onclick="esqueciSenha(); return false;"
+            >
+                Esqueceu sua senha?
+            </a>
+
         </div>
+
+
+        <button
+            type="submit"
+            class="btn-login"
+        >
+            Entrar
+        </button>
+
+
+    </form>
+
+
+    <div class="linha">
+
+        <span>
+            ou continue com
+        </span>
 
     </div>
 
 
-    <!-- FORMULÁRIO -->
+    <!-- LOGIN SOCIAL -->
 
-    <div class="login-right">
-
-        <h2>Entrar</h2>
-
-        <p class="login-subtitulo">
-            Acesse sua conta para continuar.
-        </p>
-
-        <form action="dashboard.html" method="get">
-
-        </form>
-
-            <label for="email">E-mail</label>
-
-            <input
-                type="email"
-                id="email"
-                placeholder="seu@email.com"
-                required
-            >
+    <div class="social-login">
 
 
-            <label for="senha">Senha</label>
+        <button
+            type="button"
+            class="btn-social"
+            onclick="loginGoogle()"
+        >
 
-            <div class="senha-box">
+            <i class="fa-brands fa-google"></i>
 
-                <input
-                    type="password"
-                    id="senha"
-                    placeholder="Digite sua senha"
-                    required
-                >
+            <span>
+                Continuar com Google
+            </span>
 
-                <button
-                    type="button"
-                    class="mostrar-senha"
-                    onclick="mostrarSenha()"
-                    aria-label="Mostrar senha"
-                >
-                    <i class="fa-solid fa-eye"></i>
-                </button>
-
-            </div>
+        </button>
 
 
-            <div class="opcoes-login">
+        <button
+            type="button"
+            class="btn-social"
+            onclick="loginFacebook()"
+        >
 
-                <label class="lembrar">
-                    <input type="checkbox">
-                    <span>Lembrar de mim</span>
-                </label>
+            <i class="fa-brands fa-facebook"></i>
 
-                <a href="#" onclick="esqueciSenha()">
-                    Esqueceu sua senha?
-                </a>
+            <span>
+                Continuar com Facebook
+            </span>
 
-            </div>
-
-
-            <button type="submit" class="btn-login">
-                Entrar
-            </button>
-
-        </form>
+        </button>
 
 
-        <div class="linha">
-            <span>ou continue com</span>
-        </div>
+        <button
+            type="button"
+            class="btn-social"
+            onclick="loginNumero()"
+        >
+
+            <i class="fa-solid fa-mobile-screen-button"></i>
+
+            <span>
+                Continuar com número
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+    <p class="criar">
+
+        Não possui uma conta?
+
+        <a href="cadastro.html">
+            Criar Conta
+        </a>
+
+    </p>
+
+
+    <a
+        href="index.html"
+        class="voltar"
+    >
+        ← Voltar ao início
+    </a>
+
+
+</div>
 
 
         <!-- LOGIN SOCIAL -->
