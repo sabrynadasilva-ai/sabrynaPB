@@ -1642,3 +1642,400 @@ footer p{
     }
 
 }
+
+/* =========================================
+   PÁGINA DE PERFIL
+========================================= */
+
+.pagina-perfil{
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+
+/* CONTEÚDO */
+
+.perfil-container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:50px 0 70px;
+}
+
+
+/* CABEÇALHO DO PERFIL */
+
+.perfil-topo{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:35px;
+}
+
+
+.perfil-avatar{
+    width:110px;
+    height:110px;
+    background:#dff7e8;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    position:relative;
+    border:5px solid white;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+
+.botao-camera{
+    position:absolute;
+    right:-3px;
+    bottom:0;
+
+    width:35px;
+    height:35px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#22c55e;
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+
+.perfil-identificacao h1{
+    font-size:36px;
+    margin:0 0 5px;
+    color:#172033;
+}
+
+
+.perfil-identificacao p{
+    margin:0;
+    color:#6b7280;
+    font-size:16px;
+}
+
+
+.perfil-identificacao i{
+    color:#22c55e;
+    margin-right:6px;
+}
+
+
+
+/* CARDS */
+
+.perfil-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:25px;
+
+    box-shadow:0 8px 30px rgba(31,41,55,.07);
+}
+
+
+.perfil-card-titulo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:28px;
+}
+
+
+.icone-card{
+    width:48px;
+    height:48px;
+
+    background:#dcfce7;
+    color:#16a34a;
+
+    border-radius:13px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:20px;
+}
+
+
+.perfil-card-titulo h2{
+    margin:0;
+    font-size:22px;
+    color:#172033;
+}
+
+
+.perfil-card-titulo p{
+    margin:3px 0 0;
+    color:#8a94a6;
+    font-size:14px;
+}
+
+
+
+/* INFORMAÇÕES */
+
+.informacoes-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+
+.info-item{
+    background:#f8fafc;
+    border:1px solid #edf0f4;
+
+    border-radius:14px;
+
+    padding:18px;
+}
+
+
+.info-item span{
+    display:block;
+
+    font-size:13px;
+
+    color:#8a94a6;
+
+    margin-bottom:6px;
+}
+
+
+.info-item strong{
+    display:block;
+
+    font-size:16px;
+
+    color:#263247;
+}
+
+
+.btn-editar{
+    margin-top:25px;
+
+    padding:12px 20px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#22c55e;
+    color:white;
+
+    font-family:'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+
+.btn-editar:hover{
+    background:#16a34a;
+    transform:translateY(-1px);
+}
+
+
+.btn-editar i{
+    margin-right:7px;
+}
+
+
+
+/* OBJETIVO */
+
+.objetivo-box{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#f0fdf4;
+
+    border:1px solid #dcfce7;
+
+    border-radius:15px;
+
+    padding:20px;
+}
+
+
+.objetivo-box i{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#22c55e;
+    color:white;
+
+    border-radius:12px;
+
+    font-size:18px;
+}
+
+
+.objetivo-box p{
+    margin:0;
+
+    color:#4b5563;
+
+    font-size:15px;
+
+    line-height:1.6;
+}
+
+
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+}
+
+
+.estatistica{
+    background:#f8fafc;
+
+    border:1px solid #edf0f4;
+
+    border-radius:15px;
+
+    padding:22px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+
+.estatistica:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+
+.estatistica-icone{
+    width:45px;
+    height:45px;
+
+    margin:0 auto 12px;
+
+    border-radius:12px;
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:18px;
+}
+
+
+.estatistica strong{
+    display:block;
+
+    font-size:28px;
+
+    color:#172033;
+
+    margin-bottom:3px;
+}
+
+
+.estatistica span{
+    font-size:13px;
+
+    color:#8a94a6;
+}
+
+
+
+/* RODAPÉ */
+
+.rodape{
+    background:#172033;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:14px;
+
+    margin-top:20px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width:800px){
+
+    .perfil-container{
+        width:92%;
+        padding-top:35px;
+    }
+
+
+    .informacoes-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .estatisticas{
+        grid-template-columns:1fr 1fr;
+    }
+
+
+    .perfil-identificacao h1{
+        font-size:30px;
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .perfil-topo{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+
+    .estatisticas{
+        grid-template-columns:1fr;
+    }
+
+
+    .perfil-card{
+        padding:22px;
+    }
+
+}

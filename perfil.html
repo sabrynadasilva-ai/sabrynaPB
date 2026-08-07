@@ -3,45 +3,45 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Perfil | StudyFlow</title>
+    <title>Perfil | StudyFlow</title>
 
-<link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
 </head>
 
 
-<body>
+<body class="pagina-perfil">
 
 
-<!-- ================= HEADER ================= -->
+<!-- ================= CABEÇALHO ================= -->
 
-<header>
+<header class="topo">
 
     <div class="logo">
 
-        🎓
-
-        <span>StudyFlow</span>
+        🎓 <span>StudyFlow</span>
 
     </div>
 
 
     <nav>
-
-        <a href="index.html">
-            Início
-        </a>
 
         <a href="dashboard.html">
             Dashboard
@@ -51,32 +51,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             Perfil
         </a>
 
+        <a href="#">
+            Configurações
+        </a>
+
         <a href="index.html">
             Sair
         </a>
 
     </nav>
 
+
+    <div class="usuario">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <div class="usuario-avatar">
+            S
+        </div>
+
+    </div>
+
 </header>
 
 
 
-<!-- ================= PERFIL ================= -->
+<!-- ================= CONTEÚDO ================= -->
 
-<main class="perfil">
+<main class="perfil-container">
 
 
     <!-- CABEÇALHO DO PERFIL -->
 
-    <section class="perfil-cabecalho">
+    <section class="perfil-topo">
 
-        <div class="foto-perfil">
+        <div class="perfil-avatar">
 
-            <div class="avatar">
-                👩🏻‍🎓
-            </div>
+            <span>👩🏻‍🎓</span>
 
-            <button class="editar-foto">
+            <button class="botao-camera">
 
                 <i class="fa-solid fa-camera"></i>
 
@@ -85,9 +98,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
 
 
-        <div class="perfil-nome">
+        <div class="perfil-identificacao">
 
-            <h1>Sabrina</h1>
+            <h1>Sabryna</h1>
 
             <p>
 
@@ -107,14 +120,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <section class="perfil-card">
 
-        <div class="card-titulo">
+        <div class="perfil-card-titulo">
 
-            <div class="card-icone">
+            <div class="icone-card">
 
                 <i class="fa-solid fa-user"></i>
 
             </div>
-
 
             <div>
 
@@ -129,64 +141,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
 
 
-
         <div class="informacoes-grid">
 
 
             <div class="info-item">
 
-                <span>
-                    Nome completo
-                </span>
+                <span>Nome completo</span>
 
-                <strong>
-                    Sabrina
-                </strong>
+                <strong>Sabryna</strong>
 
             </div>
 
 
             <div class="info-item">
 
-                <span>
-                    E-mail
-                </span>
+                <span>E-mail</span>
 
-                <strong>
-                    sabryna@email.com
-                </strong>
+                <strong>sabryna@email.com</strong>
 
             </div>
 
 
             <div class="info-item">
 
-                <span>
-                    Curso
-                </span>
+                <span>Curso</span>
 
-                <strong>
-                    Desenvolvimento de Sistemas
-                </strong>
+                <strong>Desenvolvimento de Sistemas</strong>
 
             </div>
 
 
             <div class="info-item">
 
-                <span>
-                    Turma
-                </span>
+                <span>Turma</span>
 
-                <strong>
-                    2ª Série
-                </strong>
+                <strong>2ª Série</strong>
 
             </div>
 
 
         </div>
-
 
 
         <button class="btn-editar">
@@ -205,14 +199,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <section class="perfil-card">
 
-        <div class="card-titulo">
+        <div class="perfil-card-titulo">
 
-            <div class="card-icone">
+            <div class="icone-card">
 
                 <i class="fa-solid fa-bullseye"></i>
 
             </div>
-
 
             <div>
 
@@ -227,15 +220,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
 
 
+        <div class="objetivo-box">
 
-        <div class="objetivo">
-
-            <div class="objetivo-icone">
-
-                <i class="fa-solid fa-book-open"></i>
-
-            </div>
-
+            <i class="fa-solid fa-book-open"></i>
 
             <p>
 
@@ -254,14 +241,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <section class="perfil-card">
 
-        <div class="card-titulo">
+        <div class="perfil-card-titulo">
 
-            <div class="card-icone">
+            <div class="icone-card">
 
                 <i class="fa-solid fa-chart-simple"></i>
 
             </div>
-
 
             <div>
 
@@ -276,69 +262,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
 
 
-
         <div class="estatisticas">
 
 
             <div class="estatistica">
 
-                <i class="fa-solid fa-list-check"></i>
+                <div class="estatistica-icone">
 
-                <strong>
-                    8
-                </strong>
+                    <i class="fa-solid fa-list-check"></i>
 
-                <span>
-                    Tarefas
-                </span>
+                </div>
 
-            </div>
+                <strong>8</strong>
 
-
-
-            <div class="estatistica">
-
-                <i class="fa-solid fa-circle-check"></i>
-
-                <strong>
-                    2
-                </strong>
-
-                <span>
-                    Concluídas
-                </span>
+                <span>Tarefas</span>
 
             </div>
 
 
-
             <div class="estatistica">
 
-                <i class="fa-solid fa-book"></i>
+                <div class="estatistica-icone">
 
-                <strong>
-                    3
-                </strong>
+                    <i class="fa-solid fa-circle-check"></i>
 
-                <span>
-                    Matérias
-                </span>
+                </div>
+
+                <strong>2</strong>
+
+                <span>Concluídas</span>
 
             </div>
 
 
+            <div class="estatistica">
+
+                <div class="estatistica-icone">
+
+                    <i class="fa-solid fa-book"></i>
+
+                </div>
+
+                <strong>3</strong>
+
+                <span>Matérias</span>
+
+            </div>
+
 
             <div class="estatistica">
 
-                <i class="fa-solid fa-chart-line"></i>
+                <div class="estatistica-icone">
 
-                <strong>
-                    80%
-                </strong>
+                    <i class="fa-solid fa-chart-line"></i>
 
-                <span>
-                    Progresso
-                </span>
+                </div>
+
+                <strong>80%</strong>
+
+                <span>Progresso</span>
 
             </div>
 
@@ -348,29 +330,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </section>
 
 
-
-    <!-- ================= VOLTAR ================= -->
-
-    <a href="dashboard.html" class="voltar-dashboard">
-
-        <i class="fa-solid fa-arrow-left"></i>
-
-        Voltar ao Dashboard
-
-    </a>
-
-
 </main>
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- ================= RODAPÉ ================= -->
 
-<footer>
+<footer class="rodape">
 
-    <p>
-        © 2026 StudyFlow — Organize seus estudos, alcance seus objetivos.
-    </p>
+    © 2026 StudyFlow — Organize seus estudos, alcance seus objetivos.
 
 </footer>
 
