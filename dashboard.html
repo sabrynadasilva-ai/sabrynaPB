@@ -1,108 +1,614 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dashboard | StudyFlow</title>
 
 <link rel="icon" type="image/png" href="favicon.png">
+
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
-<body>
+
+<body class="dashboard-page">
+
+
+<!-- ================= HEADER ================= -->
 
 <header class="topo">
 
-<div class="logo">
-🎓 <span>StudyFlow</span>
-</div>
+    <div class="logo">
 
-<nav>
- 
-<a href="dashboard.html">Dashboard</a>
+        🎓
 
-<a href="perfil.html">Perfil</a>
+        <span>StudyFlow</span>
 
-<a href="#">Configurações</a>
+    </div>
 
-<a href="index.html">Sair</a>
 
-</nav>
+    <nav>
 
-<div class="usuario">
+        <a href="dashboard.html" class="ativo">
+            Dashboard
+        </a>
 
-<i class="fa-regular fa-bell"></i>
+        <a href="perfil.html">
+            Perfil
+        </a>
 
-<img src="https://i.pravatar.cc/45" alt="Usuário">
+        <a href="#">
+            Configurações
+        </a>
 
-</div>
+        <a href="index.html">
+            Sair
+        </a>
+
+    </nav>
+
+
+    <div class="usuario">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <div class="avatar-dashboard">
+            S
+        </div>
+
+    </div>
 
 </header>
 
+
+
+<!-- ================= CONTEÚDO ================= -->
+
 <main class="dashboard">
 
-<div class="boas-vindas">
 
-<h1>Olá, Sabryna 👋</h1>
+    <!-- BOAS-VINDAS -->
 
-<p>Vamos organizar seus estudos de hoje.</p>
+    <section class="boas-vindas">
 
- 
-</div>
+        <div>
 
-<div class="cards-dashboard">
+            <p class="pequeno-titulo">
+                PAINEL DE ESTUDOS
+            </p>
 
-<div class="card-dashboard">
+            <h1>
+                Olá, Sabryna! 👋
+            </h1>
 
-<i class="fa-solid fa-book"></i>
+            <p>
+                Vamos organizar seus estudos de hoje?
+            </p>
 
-<h3>Matérias</h3>
+        </div>
 
-<h2>3</h2>
 
-<p>Banco de Dados<br>Back-End<br>Empreendedorismo</p>
+        <div class="data-hoje">
 
-</div>
+            <i class="fa-regular fa-calendar"></i>
 
-<div class="card-dashboard">
+            <div>
 
-<i class="fa-solid fa-list-check"></i>
+                <span>Hoje</span>
 
-<h3>Tarefas</h3>
+                <strong>7 de agosto</strong>
 
-<h2>5</h2>
+            </div>
 
-<p>Você possui 5 atividades pendentes.</p>
+        </div>
 
-</div>
+    </section>
 
-<div class="card-dashboard">
 
-<i class="fa-solid fa-chart-line"></i>
 
-<h3>Progresso</h3>
+    <!-- ================= RESUMO ================= -->
 
-<h2>80%</h2>
+    <section class="cards-dashboard">
 
-<div class="barra">
 
-<div class="progresso"></div>
+        <div class="card-dashboard">
 
-</div>
+            <div class="icone-card verde">
 
-</div>
+                <i class="fa-solid fa-book"></i>
 
-</div>
+            </div>
+
+            <div>
+
+                <span>Matérias</span>
+
+                <h2>3</h2>
+
+                <p>
+                    Disciplinas cadastradas
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card-dashboard">
+
+            <div class="icone-card azul">
+
+                <i class="fa-solid fa-list-check"></i>
+
+            </div>
+
+            <div>
+
+                <span>Tarefas</span>
+
+                <h2>5</h2>
+
+                <p>
+                    Atividades pendentes
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card-dashboard">
+
+            <div class="icone-card roxo">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div>
+
+                <span>Concluídas</span>
+
+                <h2>2</h2>
+
+                <p>
+                    Tarefas finalizadas
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card-dashboard">
+
+            <div class="icone-card laranja">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+            <div>
+
+                <span>Progresso</span>
+
+                <h2>80%</h2>
+
+                <p>
+                    Seu desempenho
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= ÁREA PRINCIPAL ================= -->
+
+    <section class="dashboard-grid">
+
+
+        <!-- TAREFAS -->
+
+        <div class="dashboard-box tarefas-box">
+
+            <div class="box-header">
+
+                <div>
+
+                    <h2>
+                        Próximas tarefas
+                    </h2>
+
+                    <p>
+                        Não deixe suas atividades acumularem.
+                    </p>
+
+                </div>
+
+
+                <button class="btn-pequeno">
+                    + Nova tarefa
+                </button>
+
+            </div>
+
+
+
+            <div class="lista-tarefas">
+
+
+                <div class="tarefa">
+
+                    <div class="tarefa-icone">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <div class="tarefa-info">
+
+                        <strong>
+                            Trabalho de Banco de Dados
+                        </strong>
+
+                        <span>
+                            Banco de Dados II
+                        </span>
+
+                    </div>
+
+                    <div class="prazo">
+                        Amanhã
+                    </div>
+
+                </div>
+
+
+
+                <div class="tarefa">
+
+                    <div class="tarefa-icone">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div class="tarefa-info">
+
+                        <strong>
+                            Revisar Back-End
+                        </strong>
+
+                        <span>
+                            Programação Back-End
+                        </span>
+
+                    </div>
+
+                    <div class="prazo">
+                        10 ago.
+                    </div>
+
+                </div>
+
+
+
+                <div class="tarefa">
+
+                    <div class="tarefa-icone">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div class="tarefa-info">
+
+                        <strong>
+                            Preparar apresentação
+                        </strong>
+
+                        <span>
+                            Inovação e Tecnologia
+                        </span>
+
+                    </div>
+
+                    <div class="prazo">
+                        12 ago.
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <a href="#" class="ver-todas">
+                Ver todas as tarefas →
+            </a>
+
+        </div>
+
+
+
+        <!-- PROGRESSO -->
+
+        <div class="dashboard-box progresso-box">
+
+            <div class="box-header">
+
+                <div>
+
+                    <h2>
+                        Meu progresso
+                    </h2>
+
+                    <p>
+                        Acompanhe sua evolução.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="progresso-centro">
+
+                <div class="circulo-progresso">
+
+                    <strong>
+                        80%
+                    </strong>
+
+                    <span>
+                        concluído
+                    </span>
+
+                </div>
+
+
+                <div class="progresso-texto">
+
+                    <div>
+
+                        <span>
+                            Tarefas concluídas
+                        </span>
+
+                        <strong>
+                            2 de 5
+                        </strong>
+
+                    </div>
+
+
+                    <div class="barra-dashboard">
+
+                        <div class="barra-preenchida"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MATÉRIAS -->
+
+        <div class="dashboard-box materias-box">
+
+            <div class="box-header">
+
+                <div>
+
+                    <h2>
+                        Minhas matérias
+                    </h2>
+
+                    <p>
+                        Suas disciplinas.
+                    </p>
+
+                </div>
+
+                <button class="mais">
+                    +
+                </button>
+
+            </div>
+
+
+            <div class="materias-lista">
+
+
+                <div class="materia">
+
+                    <div class="materia-icon verde-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Banco de Dados II
+                        </strong>
+
+                        <span>
+                            3 tarefas
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="materia">
+
+                    <div class="materia-icon azul-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Programação Back-End
+                        </strong>
+
+                        <span>
+                            2 tarefas
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="materia">
+
+                    <div class="materia-icon roxo-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Inovação e Tecnologia
+                        </strong>
+
+                        <span>
+                            1 tarefa
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AGENDA -->
+
+        <div class="dashboard-box agenda-box">
+
+            <div class="box-header">
+
+                <div>
+
+                    <h2>
+                        Agenda
+                    </h2>
+
+                    <p>
+                        Seus próximos compromissos.
+                    </p>
+
+                </div>
+
+                <i class="fa-regular fa-calendar agenda-icon"></i>
+
+            </div>
+
+
+            <div class="agenda-item">
+
+                <div class="dia">
+                    08
+                    <span>AGO</span>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Entrega do trabalho
+                    </strong>
+
+                    <span>
+                        Banco de Dados II
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="agenda-item">
+
+                <div class="dia">
+                    10
+                    <span>AGO</span>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Revisão de Back-End
+                    </strong>
+
+                    <span>
+                        Programação Back-End
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= FRASE ================= -->
+
+    <section class="frase-estudo">
+
+        <i class="fa-solid fa-quote-left"></i>
+
+        <div>
+
+            <strong>
+                Pequenos passos também são progresso. 🌱
+            </strong>
+
+            <p>
+                Continue estudando e construindo seu futuro.
+            </p>
+
+        </div>
+
+    </section>
+
 
 </main>
 
+
 </body>
+
 </html>
