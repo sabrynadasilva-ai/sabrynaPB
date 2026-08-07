@@ -546,3 +546,172 @@ footer p{
     background:#f4f4f4;
     transform:translateY(-2px);
 }
+
+/* ===========================
+   NOVO DASHBOARD
+=========================== */
+
+.dashboard {
+    margin-top: 100px;
+    padding: 55px 7%;
+    min-height: calc(100vh - 100px);
+    background: #f5f7fb;
+}
+
+/* BOAS-VINDAS */
+
+.boas-vindas {
+    margin-bottom: 35px;
+}
+
+.boas-vindas h1 {
+    font-size: 38px;
+    color: #1d2433;
+    margin-bottom: 8px;
+}
+
+.boas-vindas p {
+    color: #737987;
+    font-size: 17px;
+}
+
+/* CARDS */
+
+.cards-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.card-dashboard {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 30px;
+    min-height: 220px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.card-dashboard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+}
+
+.card-dashboard > i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dcfce7;
+    color: #22c55e;
+    border-radius: 14px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.card-dashboard h3 {
+    color: #555;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card-dashboard h2 {
+    color: #1d2433;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.card-dashboard p {
+    color: #737987;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* BARRA DE PROGRESSO */
+
+.card-dashboard .barra {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.card-dashboard .progresso {
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #22c55e,
+        #16a34a
+    );
+    border-radius: 20px;
+}
+
+/* FOTO E NOTIFICAÇÃO */
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.usuario i {
+    font-size: 21px;
+    color: #555;
+    cursor: pointer;
+}
+
+.usuario img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #dcfce7;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .cards-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard {
+        padding: 45px 5%;
+    }
+
+    .boas-vindas h1 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo span {
+        font-size: 23px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .usuario {
+        gap: 10px;
+    }
+
+}
