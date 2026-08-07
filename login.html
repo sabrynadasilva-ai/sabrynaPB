@@ -55,7 +55,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             Acesse sua conta para continuar.
         </p>
 
-        <form id="loginForm">
+        <form action="dashboard.html" method="get">
+
+        </form>
 
             <label for="email">E-mail</label>
 
@@ -151,7 +153,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 </div>
 
-
 <script>
 
 function mostrarSenha(){
@@ -204,16 +205,7 @@ function loginNumero(){
     alert("Login com número será configurado em breve!");
 
 }
-
-
-document.getElementById("loginForm").addEventListener("submit", function(event){
-
-    event.preventDefault();
-
-    window.location.href = "dashboard.html";
-
-});
-
+ 
 </script>
 
 </body>
