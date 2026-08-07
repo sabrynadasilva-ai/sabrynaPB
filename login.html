@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
 <meta charset="UTF-8">
@@ -12,6 +13,8 @@
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
@@ -19,263 +22,253 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 </head>
 
+
 <body class="login-page">
+
 
 <div class="login-container">
 
-   <!-- PAINEL VERDE -->
 
-<div class="login-left">
+    <!-- PAINEL VERDE -->
 
-    <div class="logo-login">
-        🎓 <span>StudyFlow</span>
+    <div class="login-left">
+
+        <div class="logo-login">
+            🎓 <span>StudyFlow</span>
+        </div>
+
+        <h1>
+            Bem-vindo<br>
+            ao StudyFlow! 👋
+        </h1>
+
+        <p>
+            Faça login para acessar sua conta
+            e continuar organizando seus estudos.
+        </p>
+
+        <div class="login-ilustracao">
+            📚
+        </div>
+
     </div>
 
-    <h1>Bem-vindo<br>de volta! 👋</h1>
-
-    <p>
-        Faça login para acessar sua conta
-        e continuar organizando seus estudos.
-    </p>
-
-    <div class="login-ilustracao">
-        📚
-    </div>
-
-</div>
 
 
-<!-- FORMULÁRIO -->
+    <!-- FORMULÁRIO -->
 
-<div class="login-right">
+    <div class="login-right">
 
-    <h2>Entrar</h2>
+        <h2>Entrar</h2>
 
-    <p class="login-subtitulo">
-        Acesse sua conta para continuar.
-    </p>
-
-
-    <form action="dashboard.html" method="get">
+        <p class="login-subtitulo">
+            Acesse sua conta para continuar.
+        </p>
 
 
-        <label for="email">
-            E-mail
-        </label>
-
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="seu@email.com"
-            required
-        >
+        <form id="loginForm">
 
 
-        <label for="senha">
-            Senha
-        </label>
-
-
-        <div class="senha-box">
+            <label for="email">
+                E-mail
+            </label>
 
             <input
-                type="password"
-                id="senha"
-                name="senha"
-                placeholder="Digite sua senha"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
                 required
             >
 
-            <button
-                type="button"
-                class="mostrar-senha"
-                onclick="mostrarSenha()"
-                aria-label="Mostrar senha"
-            >
 
-                <i class="fa-solid fa-eye"></i>
-
-            </button>
-
-        </div>
-
-
-        <div class="opcoes-login">
-
-            <label class="lembrar">
-
-                <input
-                    type="checkbox"
-                    name="lembrar"
-                >
-
-                <span>
-                    Lembrar de mim
-                </span>
-
+            <label for="senha">
+                Senha
             </label>
 
 
-            <a
-                href="#"
-                onclick="esqueciSenha(); return false;"
+            <div class="senha-box">
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <button
+                    type="button"
+                    class="mostrar-senha"
+                    onclick="mostrarSenha()"
+                    aria-label="Mostrar senha"
+                >
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="opcoes-login">
+
+                <label class="lembrar">
+
+                    <input
+                        type="checkbox"
+                        name="lembrar"
+                    >
+
+                    <span>
+                        Lembrar de mim
+                    </span>
+
+                </label>
+
+
+                <a
+                    href="#"
+                    onclick="esqueciSenha(); return false;"
+                >
+                    Esqueceu sua senha?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn-login"
             >
-                Esqueceu sua senha?
-            </a>
+                Entrar
+            </button>
+
+
+        </form>
+
+
+
+        <!-- DIVISOR -->
+
+        <div class="linha">
+
+            <span>
+                ou continue com
+            </span>
 
         </div>
 
-
-        <button
-            type="submit"
-            class="btn-login"
-        >
-            Entrar
-        </button>
-
-
-    </form>
-
-
-    <div class="linha">
-
-        <span>
-            ou continue com
-        </span>
-
-    </div>
-
-
-    <!-- LOGIN SOCIAL -->
-
-    <div class="social-login">
-
-
-        <button
-            type="button"
-            class="btn-social"
-            onclick="loginGoogle()"
-        >
-
-            <i class="fa-brands fa-google"></i>
-
-            <span>
-                Continuar com Google
-            </span>
-
-        </button>
-
-
-        <button
-            type="button"
-            class="btn-social"
-            onclick="loginFacebook()"
-        >
-
-            <i class="fa-brands fa-facebook"></i>
-
-            <span>
-                Continuar com Facebook
-            </span>
-
-        </button>
-
-
-        <button
-            type="button"
-            class="btn-social"
-            onclick="loginNumero()"
-        >
-
-            <i class="fa-solid fa-mobile-screen-button"></i>
-
-            <span>
-                Continuar com número
-            </span>
-
-        </button>
-
-
-    </div>
-
-
-    <p class="criar">
-
-        Não possui uma conta?
-
-        <a href="cadastro.html">
-            Criar Conta
-        </a>
-
-    </p>
-
-
-    <a
-        href="index.html"
-        class="voltar"
-    >
-        ← Voltar ao início
-    </a>
-
-
-</div>
 
 
         <!-- LOGIN SOCIAL -->
 
         <div class="social-login">
 
-            <button class="btn-social" onclick="loginGoogle()">
+
+            <button
+                type="button"
+                class="btn-social"
+                onclick="loginGoogle()"
+            >
+
                 <i class="fa-brands fa-google"></i>
-                <span>Continuar com Google</span>
+
+                <span>
+                    Continuar com Google
+                </span>
+
             </button>
 
-            <button class="btn-social" onclick="loginFacebook()">
+
+            <button
+                type="button"
+                class="btn-social"
+                onclick="loginFacebook()"
+            >
+
                 <i class="fa-brands fa-facebook"></i>
-                <span>Continuar com Facebook</span>
+
+                <span>
+                    Continuar com Facebook
+                </span>
+
             </button>
 
-            <button class="btn-social" onclick="loginNumero()">
+
+            <button
+                type="button"
+                class="btn-social"
+                onclick="loginNumero()"
+            >
+
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>Continuar com número</span>
+
+                <span>
+                    Continuar com número
+                </span>
+
             </button>
+
 
         </div>
 
 
+
         <p class="criar">
+
             Não possui uma conta?
-            <a href="cadastro.html">Criar Conta</a>
+
+            <a href="cadastro.html">
+                Criar Conta
+            </a>
+
         </p>
 
-        <a href="index.html" class="voltar">
+
+        <a
+            href="index.html"
+            class="voltar"
+        >
             ← Voltar ao início
         </a>
 
+
     </div>
+
 
 </div>
 
+
+
 <script>
+
+
+/* MOSTRAR SENHA */
 
 function mostrarSenha(){
 
     const senha = document.getElementById("senha");
+
     const icone = document.querySelector(".mostrar-senha i");
+
 
     if(senha.type === "password"){
 
         senha.type = "text";
 
         icone.classList.remove("fa-eye");
+
         icone.classList.add("fa-eye-slash");
 
-    }else{
+    }
+
+    else{
 
         senha.type = "password";
 
         icone.classList.remove("fa-eye-slash");
+
         icone.classList.add("fa-eye");
 
     }
@@ -283,34 +276,71 @@ function mostrarSenha(){
 }
 
 
+
+/* ESQUECI A SENHA */
+
 function esqueciSenha(){
 
-    alert("A recuperação de senha será adicionada em breve!");
+    alert(
+        "A recuperação de senha será adicionada em breve!"
+    );
 
 }
 
+
+
+/* GOOGLE */
 
 function loginGoogle(){
 
-    alert("Login com Google será configurado em breve!");
+    alert(
+        "O login com Google será configurado em breve!"
+    );
 
 }
 
+
+
+/* FACEBOOK */
 
 function loginFacebook(){
 
-    alert("Login com Facebook será configurado em breve!");
+    alert(
+        "O login com Facebook será configurado em breve!"
+    );
 
 }
 
+
+
+/* NÚMERO */
 
 function loginNumero(){
 
-    alert("Login com número será configurado em breve!");
+    alert(
+        "O login com número será configurado em breve!"
+    );
 
 }
- 
+
+
+
+/* BOTÃO ENTRAR */
+
+document
+.getElementById("loginForm")
+.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    window.location.href = "dashboard.html";
+
+});
+
+
 </script>
 
+
 </body>
- </html>
+
+</html>
