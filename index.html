@@ -1,184 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>StudyFlow</title>
+    <title>Entrar | StudyFlow</title>
 
-<link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body class="login-page">
 
-<header>
+    <div class="login-container">
 
-<div class="logo">
-🎓 <span>StudyFlow</span>
-</div>
+        <!-- PAINEL VERDE -->
 
-<nav>
+        <div class="login-left">
 
-<a href="#inicio">Início</a>
+            <div class="logo-login">
+                🎓 <span>StudyFlow</span>
+            </div>
 
-<a href="#recursos">Recursos</a>
+            <h1>Bem-vindo<br>de volta! 👋</h1>
 
-<a href="#sobre">Sobre</a>
+            <p>
+                Faça login para acessar sua conta
+                e continuar organizando seus estudos.
+            </p>
 
-<a href="login.html">Entrar</a>
+            <div class="login-decoration">
+                📚
+            </div>
 
-<a href="cadastro.html" class="btn-menu">
-Criar Conta
-</a>
+        </div>
 
-</nav>
 
-</header>
+        <!-- FORMULÁRIO -->
 
-<section class="hero" id="inicio">
+        <div class="login-right">
 
-<div class="hero-texto">
+            <h2>Entrar</h2>
 
-<div class="tag">
-📚 Organize sua rotina
-</div>
+            <p class="subtitulo">
+                Acesse sua conta para continuar.
+            </p>
 
-<h1>
-Organize seus estudos<br>
-de forma inteligente.
-</h1>
+            <form id="loginForm">
 
-<p>
+                <label for="email">E-mail</label>
 
-Nunca mais esqueça provas, trabalhos,
-atividades ou apresentações.
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="seu@email.com"
+                    required
+                >
 
-O StudyFlow ajuda você a organizar toda a sua vida escolar em um único lugar.
 
-</p>
+                <label for="senha">Senha</label>
 
-<div class="botoes">
+                <div class="senha-box">
 
-<a href="cadastro.html">
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
 
-<button class="btn-verde">
+                    <button type="button" class="mostrar-senha" onclick="mostrarSenha()">
+                        👁
+                    </button>
 
-Criar Conta
+                </div>
 
-</button>
 
-</a>
+                <div class="opcoes-login">
 
-<a href="login.html">
+                    <label class="lembrar">
+                        <input type="checkbox">
+                        <span>Lembrar de mim</span>
+                    </label>
 
-<button class="btn-branco">
+                    <a href="#" onclick="alert('A recuperação de senha será adicionada depois!')">
+                        Esqueceu sua senha?
+                    </a>
 
-Entrar
+                </div>
 
-</button>
 
-</a>
+                <button type="submit" class="btn-login">
+                    Entrar
+                </button>
 
-</div>
+            </form>
 
-</div>
 
-<div class="hero-imagem">
+            <div class="linha-ou">
+                <span>ou continue com</span>
+            </div>
 
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
-alt="Estudante">
 
-</div>
+            <!-- LOGIN SOCIAL -->
 
-</section>
+            <div class="social-login">
 
-<section class="recursos" id="recursos">
+                <button class="btn-social" onclick="loginGoogle()">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Continuar com Google</span>
+                </button>
 
-<h2>Recursos</h2>
+                <button class="btn-social" onclick="loginFacebook()">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Continuar com Facebook</span>
+                </button>
 
-<div class="cards">
+                <button class="btn-social" onclick="loginNumero()">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Continuar com número</span>
+                </button>
 
-<div class="card">
+            </div>
 
-<div class="icone">📅</div>
 
-<h3>Agenda</h3>
+            <p class="criar-conta">
+                Não possui uma conta?
+                <a href="cadastro.html">Criar Conta</a>
+            </p>
 
-<p>
+            <a href="index.html" class="voltar">
+                ← Voltar ao início
+            </a>
 
-Cadastre provas, atividades e trabalhos para nunca esquecer um compromisso.
+        </div>
 
-</p>
+    </div>
 
-</div>
 
-<div class="card">
-
-<div class="icone">📚</div>
-
-<h3>Matérias</h3>
-
-<p>
-
-Organize seus conteúdos por disciplina e mantenha tudo separado.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icone">📈</div>
-
-<h3>Progresso</h3>
-
-<p>
-
-Acompanhe sua evolução e veja quantas tarefas já concluiu.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="sobre" id="sobre">
-
-<h2>Sobre o StudyFlow</h2>
-
-<p>
-
-O StudyFlow foi desenvolvido como projeto integrando as disciplinas de
-Banco de Dados II, Programação Back-End I e
-Inovação Tecnológica e Empreendedorismo.
-
-Nosso objetivo é facilitar a rotina dos estudantes,
-permitindo organizar tarefas, matérias e avaliações
-de maneira simples e intuitiva.
-
-</p>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 StudyFlow • Projeto Escolar
-
-</p>
-
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
