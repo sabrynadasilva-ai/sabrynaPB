@@ -1,82 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - StudyFlow</title>
+
+<title>Entrar | StudyFlow</title>
+
+<link rel="icon" type="image/png" href="favicon.png">
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
-<body>
+<body class="login-page">
 
 <div class="login-container">
 
-<div class="login-box">
+    <!-- PAINEL VERDE -->
 
-<h1>🎓 StudyFlow</h1>
+    <div class="login-left">
 
-<h2>Entrar</h2>
+        <div class="logo-login">
+            🎓 <span>StudyFlow</span>
+        </div>
 
-<form action="dashboard.html">
+        <h1>Bem-vindo<br>de volta! 👋</h1>
 
-<input type="email" placeholder="E-mail" required>
+        <p>
+            Faça login para acessar sua conta
+            e continuar organizando seus estudos.
+        </p>
 
-<input type="password" placeholder="Senha" required>
+        <div class="login-ilustracao">
+            📚
+        </div>
 
-<button type="submit" class="btn-verde">
-Entrar
-</button>
- 
-</form>
+    </div>
 
-<div class="linha-ou">
-    <span>ou continue com</span>
+
+    <!-- FORMULÁRIO -->
+
+    <div class="login-right">
+
+        <h2>Entrar</h2>
+
+        <p class="login-subtitulo">
+            Acesse sua conta para continuar.
+        </p>
+
+        <form id="loginForm">
+
+            <label for="email">E-mail</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="seu@email.com"
+                required
+            >
+
+
+            <label for="senha">Senha</label>
+
+            <div class="senha-box">
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <button
+                    type="button"
+                    class="mostrar-senha"
+                    onclick="mostrarSenha()"
+                    aria-label="Mostrar senha"
+                >
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+
+            <div class="opcoes-login">
+
+                <label class="lembrar">
+                    <input type="checkbox">
+                    <span>Lembrar de mim</span>
+                </label>
+
+                <a href="#" onclick="esqueciSenha()">
+                    Esqueceu sua senha?
+                </a>
+
+            </div>
+
+
+            <button type="submit" class="btn-login">
+                Entrar
+            </button>
+
+        </form>
+
+
+        <div class="linha">
+            <span>ou continue com</span>
+        </div>
+
+
+        <!-- LOGIN SOCIAL -->
+
+        <div class="social-login">
+
+            <button class="btn-social" onclick="loginGoogle()">
+                <i class="fa-brands fa-google"></i>
+                <span>Continuar com Google</span>
+            </button>
+
+            <button class="btn-social" onclick="loginFacebook()">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Continuar com Facebook</span>
+            </button>
+
+            <button class="btn-social" onclick="loginNumero()">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Continuar com número</span>
+            </button>
+
+        </div>
+
+
+        <p class="criar">
+            Não possui uma conta?
+            <a href="cadastro.html">Criar Conta</a>
+        </p>
+
+        <a href="index.html" class="voltar">
+            ← Voltar ao início
+        </a>
+
+    </div>
+
 </div>
 
-<div class="social-login">
 
-<button class="btn-social google">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
-Continuar com Google
-</button>
+<script>
 
-<button class="btn-social facebook">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-Continuar com Facebook
-</button>
+function mostrarSenha(){
 
-<button class="btn-social telefone">
-📱 Continuar com Número
-</button>
+    const senha = document.getElementById("senha");
+    const icone = document.querySelector(".mostrar-senha i");
 
-</div>
+    if(senha.type === "password"){
 
-<p>
+        senha.type = "text";
 
-Não possui conta?
+        icone.classList.remove("fa-eye");
+        icone.classList.add("fa-eye-slash");
 
-<a href="cadastro.html">
+    }else{
 
-Criar Conta
+        senha.type = "password";
 
-</a>
+        icone.classList.remove("fa-eye-slash");
+        icone.classList.add("fa-eye");
 
-</p>
+    }
 
-<a href="index.html">
+}
 
-← Voltar ao início
 
-</a>
+function esqueciSenha(){
 
-</div>
+    alert("A recuperação de senha será adicionada em breve!");
 
-</div>
+}
+
+
+function loginGoogle(){
+
+    alert("Login com Google será configurado em breve!");
+
+}
+
+
+function loginFacebook(){
+
+    alert("Login com Facebook será configurado em breve!");
+
+}
+
+
+function loginNumero(){
+
+    alert("Login com número será configurado em breve!");
+
+}
+
+
+document.getElementById("loginForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    window.location.href = "dashboard.html";
+
+});
+
+</script>
 
 </body>
-</html>
+ </html>
