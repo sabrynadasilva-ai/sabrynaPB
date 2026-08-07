@@ -1,63 +1,320 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Perfil - StudyFlow</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Perfil | StudyFlow</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
-<body>
 
-<header>
+<body class="perfil-page">
 
-<div class="logo">
-🎓 <span>StudyFlow</span>
-</div>
 
-<nav>
-<a href="index.html">Início</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="perfil.html">Perfil</a>
-<a href="index.html">Sair</a>
-</nav>
+<!-- ================= HEADER ================= -->
+
+<header class="topo">
+
+    <div class="logo">
+
+        🎓
+
+        <span>StudyFlow</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="perfil.html" class="ativo">
+            Perfil
+        </a>
+
+        <a href="index.html">
+            Sair
+        </a>
+
+    </nav>
 
 </header>
 
-<section class="perfil">
 
-<div class="perfil-card">
 
-<img src="https://i.pravatar.cc/180" alt="Foto do usuário">
+<!-- ================= PERFIL ================= -->
 
-<h2>Sabryna</h2>
+<main class="perfil-container">
 
-<p class="cargo">Estudante</p>
 
-<div class="info">
+    <div class="perfil-cabecalho">
 
-<p><strong>📧 E-mail:</strong><br>sabryna@email.com</p>
+        <div class="foto-perfil">
 
-<p><strong>📚 Curso:</strong><br>Desenvolvimento de Sistemas</p>
+            <div class="avatar">
+                👩🏻‍🎓
+            </div>
 
-<p><strong>🏫 Turma:</strong><br>2ª Série</p>
+            <button class="editar-foto">
+                <i class="fa-solid fa-camera"></i>
+            </button>
 
-<p><strong>🎯 Objetivo:</strong><br>Organizar os estudos e acompanhar tarefas.</p>
+        </div>
 
-</div>
 
-<a href="dashboard.html" class="btn-voltar">
-Voltar ao Dashboard
-</a>
+        <div class="perfil-nome">
 
-</div>
+            <h1>Sabrina</h1>
 
-</section>
+            <p>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Estudante
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= INFORMAÇÕES ================= -->
+
+    <section class="perfil-card">
+
+        <div class="card-titulo">
+
+            <div>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+
+                <h2>Informações pessoais</h2>
+
+                <p>
+                    Seus dados no StudyFlow
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="informacoes-grid">
+
+
+            <div class="info-item">
+
+                <span>
+                    Nome completo
+                </span>
+
+                <strong>
+                    Sabrina
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    E-mail
+                </span>
+
+                <strong>
+                    sabryna@email.com
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Curso
+                </span>
+
+                <strong>
+                    Desenvolvimento de Sistemas
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Turma
+                </span>
+
+                <strong>
+                    2ª Série
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <button class="btn-editar">
+
+            <i class="fa-solid fa-pen"></i>
+
+            Editar informações
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= OBJETIVO ================= -->
+
+    <section class="perfil-card">
+
+        <div class="card-titulo">
+
+            <div>
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+
+            <div>
+
+                <h2>Meu objetivo</h2>
+
+                <p>
+                    O que você quer alcançar
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="objetivo">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <p>
+                Organizar meus estudos e acompanhar
+                minhas tarefas com mais facilidade.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ESTATÍSTICAS ================= -->
+
+    <section class="perfil-card">
+
+        <div class="card-titulo">
+
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+            </div>
+
+            <div>
+
+                <h2>Resumo dos estudos</h2>
+
+                <p>
+                    Seu desempenho no StudyFlow
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="estatisticas">
+
+
+            <div class="estatistica">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <strong>8</strong>
+
+                <span>
+                    Tarefas
+                </span>
+
+            </div>
+
+
+            <div class="estatistica">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <strong>2</strong>
+
+                <span>
+                    Concluídas
+                </span>
+
+            </div>
+
+
+            <div class="estatistica">
+
+                <i class="fa-solid fa-book"></i>
+
+                <strong>3</strong>
+
+                <span>
+                    Matérias
+                </span>
+
+            </div>
+
+
+            <div class="estatistica">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <strong>80%</strong>
+
+                <span>
+                    Progresso
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
